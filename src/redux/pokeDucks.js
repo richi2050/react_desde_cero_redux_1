@@ -1,5 +1,6 @@
 import axios from 'axios'
 
+
 //constantes
 const dataInicial = {
     count: 0,

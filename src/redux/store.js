@@ -2,9 +2,11 @@ import {createStore, combineReducers, compose, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 
 import pokesReducer from './pokeDucks'
+import usuarioReducer from './usuarioDucks'
 
 const rootReducer = combineReducers({
-    pokemones: pokesReducer
+    pokemones: pokesReducer,
+    usuario: usuarioReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
